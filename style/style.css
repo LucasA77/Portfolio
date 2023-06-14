@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --secundary-font: 'Krona One', sans-serif;
+    --primary-color: #F6F6F6;
+    --secundary-color: #22D4FD;
+    --terceary-color: #000000;
+    --hover-color: #272727;
+}
+
+.headerBoss {
+    padding: 2% 0 0 15%;
+}
+
+.headerMenu {
+    display: flex;
+    gap: 80px;
+}
+
+.optionMenu {
+    font-family: var(--font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 250ms all;
+}
+
+.optionMenu:hover {
+    color: var(--secundary-color);
+    transform: scale(1.4);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--terceary-color);
+    color: var(--primary-color);
+}
+
+.container {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.containerContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.containerTitle {
+    font-size: 2.25rem;
+    font-family: var(--secundary-font);
+}
+
+.featuredTitle {
+    color: var(--secundary-color);
+}
+
+.containerText {
+    font-size: 1.5rem;
+    font-family: var(--font);
+}
+
+.titleButton {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+}
+
+.containerButton {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.styleButton {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--terceary-color);
+    border: var(--secundary-color) solid 2px;
+    border-radius: 8px;   
+    width: 60%;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: 150ms all;
+}
+
+.styleButton:hover {
+    background-color: #272727;
+    color: var(--secundary-color);
+    transform: scale(1.2);
+}
+
+.mainImagem {
+    width: 100%;
+    transition: 250ms all;
+    opacity: 0.5;
+}
+
+.mainImagem:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.baseboard p {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--secundary-color);
+    color: var(--terceary-color);
+    padding: 24px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .headerBoss {
+        padding: 15%;
+    }
+
+    .headerMenu {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .containerContent {
+        width: auto;
+    }
+}
